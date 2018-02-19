@@ -1,9 +1,15 @@
 # INITIALIZE POISON
 
-# Change in file
-CHANGE|/system/build.prop|ro.build.display.id|ro.build.display.id=Poison
+# Change display ID to Poison ROM
+CHANGE|/system/build.prop|ro.build.display.id|ro.build.display.id=POISON ROM V1.1
+
+# Enable video booting(aswell as extract /system/etc/bootvideo(an mp4 file))
 CHANGE|/system/build.prop|service.bootvideo|service.bootvideo=1
+
+# Fix enter key bug
 CHANGE|/system/usr/keylayout/Generic.kl|key 28 |key 28    ENTER
+
+# Configure wifi for optimal speed
 CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gNthBeaconFilter|gNthBeaconFilter=100
 CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gEnableIPChecksumOffload|gEnableIPChecksumOffload=0
 CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|g11dSupportEnabled|g11dSupportEnabled=1
@@ -27,7 +33,7 @@ CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gActiveMinChannelTime|gApKeepA
 CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnablePowerSaveOffload|gEnablePowerSaveOffload=0
 CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnable5gEBT|gEnable5gEBT=0
 
-# Append text to file
+# Add build.prop tweaks
 APPEND|/system/build.prop|# POISON TWEAKS
 APPEND|/system/build.prop| 
 APPEND|/system/build.prop|# Enable dithering and performance tuning
@@ -87,12 +93,12 @@ APPEND|/system/build.prop|#Do note send inactive cmd when disable cec service
 APPEND|/system/build.prop|sys.ignore.inativecec=true
 APPEND|/system/build.prop|sys.open.deepcolor=true
 
-# Remove lines from file
+# Remove FOTA properties
 REMOVE|/system/build.prop|ro.fota
 REMOVE|/system/build.prop|# begin fota properties
 REMOVE|/system/build.prop|# end fota properties
 
-# Delete file or folder
+# Debloat
 DELETE|/system/preinstall
 DELETE|/system/app/AppInstaller
 DELETE|/system/app/FileBrowser
@@ -109,5 +115,6 @@ DELETE|/system/priv-app/GoogleFeedback
 DELETE|/system/priv-app/Launcher2
 DELETE|/system/preinstall
 
-# Create directory
+# Create pre-install directory
 CREATE|DIRECTORY|/preinstall
+

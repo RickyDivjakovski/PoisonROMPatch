@@ -1,17 +1,14 @@
 #!/system/bin/sh
 
 FLAG=/data/local/PreinstallMark
-if [ ! -e $FLAG ]; then
+if [ ! -f $FLAG ]; then
+    for app in $(ls /data/local/tmp/preinstall)
+    do
+        chmod 644 /data/local/tmp/preinstall/$app
+        /system/bin/pm install /data/local/tmp/preinstall/$app
+    done
+    touch $FLAG
+    rm -r /data/local/tmp/preinstall
+fi
 
-/system/bin/pm install
-
-for app in $(ls /data/local/tmp/preinstall)
-do
-    chmod 644 /data/local/tmp/preinstall/$app
-    /system/bin/pm install /data/local/tmp/preinstall/$app
-done
-
-touch $FLAG
-
-rm -r /data/local/tmp/preinstall
-exit 0
+exit 
