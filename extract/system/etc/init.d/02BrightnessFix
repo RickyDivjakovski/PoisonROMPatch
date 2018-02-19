@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+echo "1" >> /sys/class/video/vpp_brightness
+
+exit 0

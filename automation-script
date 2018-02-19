@@ -1,0 +1,113 @@
+# INITIALIZE POISON
+
+# Change in file
+CHANGE|/system/build.prop|ro.build.display.id|ro.build.display.id=Poison
+CHANGE|/system/build.prop|service.bootvideo|service.bootvideo=1
+CHANGE|/system/usr/keylayout/Generic.kl|key 28 |key 28    ENTER
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gNthBeaconFilter|gNthBeaconFilter=100
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gEnableIPChecksumOffload|gEnableIPChecksumOffload=0
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|g11dSupportEnabled|g11dSupportEnabled=1
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gApLinkMonitorPeriod|#gApLinkMonitorPeriod=10
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gGoLinkMonitorPeriod|#gGoLinkMonitorPeriod=10
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gGoKeepAlivePeriod|gGoKeepAlivePeriod=9
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gApKeepAlivePeriod|gApKeepAlivePeriod=15
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gActiveMaxChannelTime|gActiveMaxChannelTime=40
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gActiveMinChannelTime|gApKeepAlivePeriod=20
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gEnablePowerSaveOffload|gEnablePowerSaveOffload=0
+CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gEnable5gEBT|gEnable5gEBT=0
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gNthBeaconFilter|gNthBeaconFilter=100
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnableIPChecksumOffload|gEnableIPChecksumOffload=0
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|g11dSupportEnabled|g11dSupportEnabled=1
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gApLinkMonitorPeriod|#gApLinkMonitorPeriod=10
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gGoLinkMonitorPeriod|#gGoLinkMonitorPeriod=10
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gGoKeepAlivePeriod|gGoKeepAlivePeriod=9
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gApKeepAlivePeriod|gApKeepAlivePeriod=15
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gActiveMaxChannelTime|gActiveMaxChannelTime=40
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gActiveMinChannelTime|gApKeepAlivePeriod=20
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnablePowerSaveOffload|gEnablePowerSaveOffload=0
+CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnable5gEBT|gEnable5gEBT=0
+
+# Append text to file
+APPEND|/system/build.prop|# POISON TWEAKS
+APPEND|/system/build.prop| 
+APPEND|/system/build.prop|# Enable dithering and performance tuning
+APPEND|/system/build.prop|persist.sys.use_dithering=1
+APPEND|/system/build.prop|debug.performance.tuning=1
+APPEND|/system/build.prop| 
+APPEND|/system/build.prop|# Wifi tweaks
+APPEND|/system/build.prop|net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+APPEND|/system/build.prop|net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+APPEND|/system/build.prop|net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+APPEND|/system/build.prop|net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+APPEND|/system/build.prop|net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+APPEND|/system/build.prop|net.ipv4.tcp_ecn=0
+APPEND|/system/build.prop|net.ipv4.route.flush=1
+APPEND|/system/build.prop|net.ipv4.tcp_rfc1337=1
+APPEND|/system/build.prop|net.ipv4.ip_no_pmtu_disc=0
+APPEND|/system/build.prop|net.ipv4.tcp_sack=1
+APPEND|/system/build.prop|net.ipv4.tcp_fack=1
+APPEND|/system/build.prop|net.ipv4.tcp_window_scaling=1
+APPEND|/system/build.prop|net.ipv4.tcp_timestamps=1
+APPEND|/system/build.prop|net.ipv4.tcp_rmem=4096 39000 187000
+APPEND|/system/build.prop|net.ipv4.tcp_wmem=4096 39000 187000
+APPEND|/system/build.prop|net.ipv4.tcp_mem=187000 187000 187000
+APPEND|/system/build.prop|net.ipv4.tcp_no_metrics_save=1
+APPEND|/system/build.prop|net.ipv4.tcp_moderate_rcvbuf=1
+APPEND|/system/build.prop| 
+APPEND|/system/build.prop|# Faster streaming
+APPEND|/system/build.prop|media.stagefright.enable-player=true
+APPEND|/system/build.prop|media.stagefright.enable-meta=true
+APPEND|/system/build.prop|media.stagefright.enable-scan=true
+APPEND|/system/build.prop|media.stagefright.enable-http=true
+APPEND|/system/build.prop|media.stagefright.enable-record=true
+APPEND|/system/build.prop| 
+APPEND|/system/build.prop|# Use googles DNS
+APPEND|/system/build.prop|net.rmnet0.dns1=8.8.8.8
+APPEND|/system/build.prop|net.rmnet0.dns2=8.8.4.4
+APPEND|/system/build.prop|net.dns1=8.8.8.8
+APPEND|/system/build.prop|net.dns2=8.8.4.4
+APPEND|/system/build.prop| 
+APPEND|/system/build.prop|# Slight better graphics
+APPEND|/system/build.prop|video.accelerate.hw=1
+APPEND|/system/build.prop|ro.media.dec.jpeg.memcap=20000000
+APPEND|/system/build.prop|ro.media.enc.hprof.vid.bps=8000000
+APPEND|/system/build.prop|ro.media.enc.jpeg.quality=100
+APPEND|/system/build.prop| 
+APPEND|/system/build.prop|# Disables logging and sending data
+APPEND|/system/build.prop|ro.config.nocheckin=1
+APPEND|/system/build.prop|profiler.force_disable_err_rpt=1
+APPEND|/system/build.prop|profiler.force_disable_ulog=1
+APPEND|/system/build.prop| 
+APPEND|/system/build.prop|#Xtra
+APPEND|/system/build.prop|persist.sys.power_on.hide_bar=on
+APPEND|/system/build.prop|persist.sys.first.launcher=on
+APPEND|/system/build.prop|ro.mylaunch.pkgName=com.canzone.amllauncher
+APPEND|/system/build.prop|ro.mylaunch.clsName=com.canzone.amllauncher.Launcher
+APPEND|/system/build.prop|#Do note send inactive cmd when disable cec service
+APPEND|/system/build.prop|sys.ignore.inativecec=true
+APPEND|/system/build.prop|sys.open.deepcolor=true
+
+# Remove lines from file
+REMOVE|/system/build.prop|ro.fota
+REMOVE|/system/build.prop|# begin fota properties
+REMOVE|/system/build.prop|# end fota properties
+
+# Delete file or folder
+DELETE|/system/preinstall
+DELETE|/system/app/AppInstaller
+DELETE|/system/app/FileBrowser
+DELETE|/system/app/Music
+DELETE|/system/app/FotaUpdate
+DELETE|/system/app/FotaUpdateReboot
+DELETE|/system/app/ftest
+DELETE|/system/app/LiveWallpapersPicker
+DELETE|/system/app/OTAUpgrade
+DELETE|/system/media/boxtest.mp4
+DELETE|/system/media/kodi.zip
+DELETE|/system/media/bootanimation.zip
+DELETE|/system/priv-app/GoogleFeedback
+DELETE|/system/priv-app/Launcher2
+DELETE|/system/preinstall
+
+# Create directory
+CREATE|DIRECTORY|/preinstall
