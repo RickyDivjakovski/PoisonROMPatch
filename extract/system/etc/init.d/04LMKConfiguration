@@ -1,0 +1,15 @@
+#!/system/bin/sh
+
+echo "0,3,5,7,14,15" > /sys/module/lowmemorykiller/parameters/adj
+echo "2560,4096,6144,15360,17920,20480" > /sys/module/lowmemorykiller/parameters/minfree
+echo "0" > /proc/sys/kernel/panic
+echo "1" > /proc/sys/kernel/panic_on_oops
+echo "0" > /proc/sys/kernel/panic
+echo "4096" > /proc/sys/vm/min_free_kbytes
+echo "0" > /proc/sys/vm/oom_kill_allocating_task
+echo "0" > /proc/sys/vm/panic_on_oom
+echo "0" > /proc/sys/vm/laptop_mode
+echo "0" > /proc/sys/vm/swappiness
+echo "50" > /proc/sys/vm/vfs_cache_pressure
+echo "90" > /proc/sys/vm/dirty_ratio
+echo "70" > /proc/sys/vm/dirty_background_ratio

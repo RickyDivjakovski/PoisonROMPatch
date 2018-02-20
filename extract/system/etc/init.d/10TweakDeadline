@@ -1,0 +1,16 @@
+#!/system/bin/sh
+
+STL=`ls -d /sys/block/stl*`
+BML=`ls -d /sys/block/bml*`
+MMC=`ls -d /sys/block/mmc*`
+
+for i in $STL $BML $MMC $TFSR; do
+	echo 0 > $i/queue/rotational
+	echo 1 > $i/queue/iosched/low_latency
+	echo 1 > $i/queue/iosched/back_seek_penalty
+	echo 1000000000 > $i/queue/iosched/back_seek_max
+	echo 3 > $i/queue/iosched/slice_idle
+	echo 16 > $i/queue/iosched/quantum
+	echo 1 > $i/queue/iosched/fifo_batch
+	echo deadline > $i/queue/scheduler
+done

@@ -1,0 +1,68 @@
+
+----------------------------------------> V2.0
+
+Preinstall folder added
+Brightness fix
+IPV4 Tweaks
+Aggressive low memory killer
+Logger disabled
+Journalism tweaked
+Loopy smoothness tweak
+Zipaligned apps on boot
+Root and system remounted Noatime
+Deadline scheduler set at boot
+Tweaked deadline scheduler
+Sdcard readahead changed to 2048(faster IO)
+System cleaned on boot
+silenced bootsound
+Fixed playstore
+Netflix HD preinstalled
+Change device ID to spoof 4K TV with netflix support
+
+----------------------------------------> V1.0(Initial)
+
+Network Tweaks
+-Increased beacon filtering
+-Disabled IP checksum offloading
+-Enabled 802.11d support
+-Decreased AP monitor link period
+-Extended AP link keep alive period(1.5)
+-Disabled powersave offload
+-Decrased active channel time
+-Disabled logging and sending data
+-Use googles DNS by default
+-Extended TCP buffer size
+-IPV4 tweaks
+-Other various network enhancement tweaks
+
+UI Tweaks
+-Changed the launcher background(S9 leaked wallpaper)
+-Better looking tile icons
+-Transparent tiles
+-Removed logo
+-Better looking wifi icon
+-Better looking application icons
+-Modified LED resources
+-Poison boot video
+
+Property tweaks
+-Faster streaming(network tweaks)
+-Better image quality
+-Enabled performance tuning
+-Enabled dithering
+
+Fixes
+-Enter key bug
+
+Smoother experience
+-Removed bloat apps
+-Removed default wallpaper(never used)
+-Removed factory apps
+-Removed stock kodi config files
+-Enabled video booting
+-Adblocking hosts
+-Init.d enabled
+-Disabled CEC by default
+-Added smoother graphics tweaks
+-EsFileExplorer as default filemanager
+-Reboot app

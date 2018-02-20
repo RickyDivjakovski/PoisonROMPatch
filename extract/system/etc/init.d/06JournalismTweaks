@@ -1,0 +1,8 @@
+#!/system/bin/sh
+
+busybox tune2fs -o journal_data_writeback /dev/block/system
+busybox tune2fs -O ^has_journal /dev/block/system
+busybox tune2fs -o journal_data_writeback /dev/block/cache
+busybox tune2fs -O ^has_journal /dev/block/cache
+busybox tune2fs -o journal_data_writeback /dev/block/data
+busybox tune2fs -O ^has_journal /dev/block/data
