@@ -121,6 +121,7 @@ DELETE|/system/media/kodi.zip
 DELETE|/system/media/bootanimation.zip
 DELETE|/system/priv-app/GoogleFeedback
 DELETE|/system/priv-app/Launcher2
+DELETE|/system/priv-app/WallpaperCropper
 DELETE|/system/preinstall
 
 # Create pre-install directory if non existing
