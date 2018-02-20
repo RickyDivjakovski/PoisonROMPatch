@@ -1,6 +1,8 @@
 
 ----------------------------------------> V2.0
 
+Absoluely lightning fast
+Ram usage hovers on 22%(2gb) and 18%(3gb)
 Preinstall folder added
 Brightness fix
 IPV4 Tweaks
@@ -13,11 +15,9 @@ Root and system remounted Noatime
 Deadline scheduler set at boot
 Tweaked deadline scheduler
 Sdcard readahead changed to 2048(faster IO)
-System cleaned on boot
-silenced bootsound
+Silenced bootsound
 Fixed playstore
 Netflix HD preinstalled
-Change device ID to spoof 4K TV with netflix support
 
 ----------------------------------------> V1.0(Initial)
 

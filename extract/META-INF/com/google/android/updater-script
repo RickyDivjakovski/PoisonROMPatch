@@ -17,8 +17,8 @@ ui_print("XXX           ~XXXXXXXXX`     XX    XXXXXXXXX~    'XXXXXXXXX`    XXX  
 ui_print("~~~              ~~X~~`      '~~`     XXXXX~         ~~X~~`      ~~~    '~~~`");
 ui_print("                   ~                  ~~~~~            ~");
 
-ui_print("*** T95Z 2/16GB 7.1.2 PORT ***");
 ui_print("*** By Ricky Divjakovski ***");
+ui_print("  *** For S912 devices ***");
 
 ui_print("Mounting partitions.");
 ifelse(is_mounted("/system") == "/system", unmount("/system"));

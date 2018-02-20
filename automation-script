@@ -1,6 +1,6 @@
 # INITIALIZE POISON
 
-# Change display ID to Poison ROM
+# Change display ID to Poison ROM(Version)
 CHANGE|/system/build.prop|ro.build.display.id|ro.build.display.id=POISON ROM V2.0
 
 # Change device to spoof 4K TV with netflix support
