@@ -1,3 +1,14 @@
+----------------------------------------> V2.5
+
+Changes in automation script to accomodate update
+
+----------------------------------------> V2.5
+
+Updated GMS core
+Changed DNS server to fastest(on earth)
+Removed contacts sync
+Removed calendar sync
+Removed PPPoE(log shows it fails anyway)
 
 ----------------------------------------> V2.0
 

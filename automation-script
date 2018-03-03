@@ -1,105 +1,97 @@
 # INITIALIZE POISON
 
 # Change display ID to Poison ROM(Version)
-CHANGE|/system/build.prop|ro.build.display.id|ro.build.display.id=POISON ROM V2.0
-
-# Change device to spoof 4K TV with netflix support
-# CHANGE|/system/build.prop|ro.product.model=|ro.product.model=BRAVIA 4K 2015
-# CHANGE|/system/build.prop|ro.product.brand=|ro.product.brand=Sony
-# CHANGE|/system/build.prop|ro.product.name=|ro.product.name=SVP4KDTV15_UC
-# CHANGE|/system/build.prop|ro.product.device=|ro.product.device=SVP-DTV15
-# CHANGE|/system/build.prop|ro.product.manufacturer=|ro.product.manufacturer=Sony
-# CHANGE|/system/build.prop|ro.build.product=|ro.build.product=SVPDTV15
+CHANGE|START|/system/build.prop|ro.build.display.id|ro.build.display.id=POISON ROM V2.0
 
 # Enable video booting(aswell as extract /system/etc/bootvideo(an mp4 file))
-CHANGE|/system/build.prop|service.bootvideo|service.bootvideo=1
+CHANGE|START|/system/build.prop|service.bootvideo|service.bootvideo=1
 
 # Fix enter key bug
-CHANGE|/system/usr/keylayout/Generic.kl|key 28 |key 28    ENTER
+CHANGE|START|/system/usr/keylayout/Generic.kl|key 28 |key 28    ENTER
 
 # Configure wifi for optimal speed
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gNthBeaconFilter|gNthBeaconFilter=100
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gEnableIPChecksumOffload|gEnableIPChecksumOffload=0
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|g11dSupportEnabled|g11dSupportEnabled=1
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gApLinkMonitorPeriod|#gApLinkMonitorPeriod=10
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gGoLinkMonitorPeriod|#gGoLinkMonitorPeriod=10
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gGoKeepAlivePeriod|gGoKeepAlivePeriod=9
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gApKeepAlivePeriod|gApKeepAlivePeriod=15
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gActiveMaxChannelTime|gActiveMaxChannelTime=40
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gActiveMinChannelTime|gApKeepAlivePeriod=20
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gEnablePowerSaveOffload|gEnablePowerSaveOffload=0
-CHANGE|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gEnable5gEBT|gEnable5gEBT=0
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gNthBeaconFilter|gNthBeaconFilter=100
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnableIPChecksumOffload|gEnableIPChecksumOffload=0
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|g11dSupportEnabled|g11dSupportEnabled=1
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gApLinkMonitorPeriod|#gApLinkMonitorPeriod=10
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gGoLinkMonitorPeriod|#gGoLinkMonitorPeriod=10
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gGoKeepAlivePeriod|gGoKeepAlivePeriod=9
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gApKeepAlivePeriod|gApKeepAlivePeriod=15
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gActiveMaxChannelTime|gActiveMaxChannelTime=40
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gActiveMinChannelTime|gApKeepAlivePeriod=20
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnablePowerSaveOffload|gEnablePowerSaveOffload=0
-CHANGE|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnable5gEBT|gEnable5gEBT=0
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gNthBeaconFilter|gNthBeaconFilter=100
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gEnableIPChecksumOffload|gEnableIPChecksumOffload=0
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|g11dSupportEnabled|g11dSupportEnabled=1
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gApLinkMonitorPeriod|#gApLinkMonitorPeriod=10
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gGoLinkMonitorPeriod|#gGoLinkMonitorPeriod=10
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gGoKeepAlivePeriod|gGoKeepAlivePeriod=9
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gApKeepAlivePeriod|gApKeepAlivePeriod=15
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gActiveMaxChannelTime|gActiveMaxChannelTime=40
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gActiveMinChannelTime|gApKeepAlivePeriod=20
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gEnablePowerSaveOffload|gEnablePowerSaveOffload=0
+CHANGE|START|/system/etc/wifi/qca9377/wlan/qcom_cfg.ini|gEnable5gEBT|gEnable5gEBT=0
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gNthBeaconFilter|gNthBeaconFilter=100
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnableIPChecksumOffload|gEnableIPChecksumOffload=0
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|g11dSupportEnabled|g11dSupportEnabled=1
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gApLinkMonitorPeriod|#gApLinkMonitorPeriod=10
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gGoLinkMonitorPeriod|#gGoLinkMonitorPeriod=10
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gGoKeepAlivePeriod|gGoKeepAlivePeriod=9
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gApKeepAlivePeriod|gApKeepAlivePeriod=15
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gActiveMaxChannelTime|gActiveMaxChannelTime=40
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gActiveMinChannelTime|gApKeepAlivePeriod=20
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnablePowerSaveOffload|gEnablePowerSaveOffload=0
+CHANGE|START|/system/etc/wifi/qca6174/wlan/qcom_cfg.ini|gEnable5gEBT|gEnable5gEBT=0
 
 # Add build.prop tweaks
-APPEND|/system/build.prop|# POISON TWEAKS
-APPEND|/system/build.prop| 
-APPEND|/system/build.prop|# Enable dithering and performance tuning
-APPEND|/system/build.prop|persist.sys.use_dithering=1
-APPEND|/system/build.prop|debug.performance.tuning=1
-APPEND|/system/build.prop| 
-APPEND|/system/build.prop|# Wifi tweaks
-APPEND|/system/build.prop|net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
-APPEND|/system/build.prop|net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
-APPEND|/system/build.prop|net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
-APPEND|/system/build.prop|net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
-APPEND|/system/build.prop|net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
-APPEND|/system/build.prop|net.ipv4.tcp_ecn=0
-APPEND|/system/build.prop|net.ipv4.route.flush=1
-APPEND|/system/build.prop|net.ipv4.tcp_rfc1337=1
-APPEND|/system/build.prop|net.ipv4.ip_no_pmtu_disc=0
-APPEND|/system/build.prop|net.ipv4.tcp_sack=1
-APPEND|/system/build.prop|net.ipv4.tcp_fack=1
-APPEND|/system/build.prop|net.ipv4.tcp_window_scaling=1
-APPEND|/system/build.prop|net.ipv4.tcp_timestamps=1
-APPEND|/system/build.prop|net.ipv4.tcp_rmem=4096 39000 187000
-APPEND|/system/build.prop|net.ipv4.tcp_wmem=4096 39000 187000
-APPEND|/system/build.prop|net.ipv4.tcp_mem=187000 187000 187000
-APPEND|/system/build.prop|net.ipv4.tcp_no_metrics_save=1
-APPEND|/system/build.prop|net.ipv4.tcp_moderate_rcvbuf=1
-APPEND|/system/build.prop| 
-APPEND|/system/build.prop|# Faster streaming
-APPEND|/system/build.prop|media.stagefright.enable-player=true
-APPEND|/system/build.prop|media.stagefright.enable-meta=true
-APPEND|/system/build.prop|media.stagefright.enable-scan=true
-APPEND|/system/build.prop|media.stagefright.enable-http=true
-APPEND|/system/build.prop|media.stagefright.enable-record=true
-APPEND|/system/build.prop| 
-APPEND|/system/build.prop|# Use googles DNS
-APPEND|/system/build.prop|net.rmnet0.dns1=8.8.8.8
-APPEND|/system/build.prop|net.rmnet0.dns2=8.8.4.4
-APPEND|/system/build.prop|net.dns1=8.8.8.8
-APPEND|/system/build.prop|net.dns2=8.8.4.4
-APPEND|/system/build.prop| 
-APPEND|/system/build.prop|# Slight better graphics
-APPEND|/system/build.prop|video.accelerate.hw=1
-APPEND|/system/build.prop|ro.media.dec.jpeg.memcap=20000000
-APPEND|/system/build.prop|ro.media.enc.hprof.vid.bps=8000000
-APPEND|/system/build.prop|ro.media.enc.jpeg.quality=100
-APPEND|/system/build.prop| 
-APPEND|/system/build.prop|# Disables logging and sending data
-APPEND|/system/build.prop|ro.config.nocheckin=1
-APPEND|/system/build.prop|profiler.force_disable_err_rpt=1
-APPEND|/system/build.prop|profiler.force_disable_ulog=1
-APPEND|/system/build.prop| 
-APPEND|/system/build.prop|#Xtra
-APPEND|/system/build.prop|persist.sys.power_on.hide_bar=on
-APPEND|/system/build.prop|persist.sys.first.launcher=on
-APPEND|/system/build.prop|ro.mylaunch.pkgName=com.canzone.amllauncher
-APPEND|/system/build.prop|ro.mylaunch.clsName=com.canzone.amllauncher.Launcher
-APPEND|/system/build.prop|#Do note send inactive cmd when disable cec service
-APPEND|/system/build.prop|sys.ignore.inativecec=true
-APPEND|/system/build.prop|sys.open.deepcolor=true
+APPEND|BOTTOM|/system/build.prop|# POISON TWEAKS
+APPEND|BOTTOM|/system/build.prop| 
+APPEND|BOTTOM|/system/build.prop|# Enable dithering and performance tuning
+APPEND|BOTTOM|/system/build.prop|persist.sys.use_dithering=1
+APPEND|BOTTOM|/system/build.prop|debug.performance.tuning=1
+APPEND|BOTTOM|/system/build.prop| 
+APPEND|BOTTOM|/system/build.prop|# Wifi tweaks
+APPEND|BOTTOM|/system/build.prop|net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+APPEND|BOTTOM|/system/build.prop|net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+APPEND|BOTTOM|/system/build.prop|net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+APPEND|BOTTOM|/system/build.prop|net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+APPEND|BOTTOM|/system/build.prop|net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_ecn=0
+APPEND|BOTTOM|/system/build.prop|net.ipv4.route.flush=1
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_rfc1337=1
+APPEND|BOTTOM|/system/build.prop|net.ipv4.ip_no_pmtu_disc=0
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_sack=1
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_fack=1
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_window_scaling=1
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_timestamps=1
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_rmem=4096 39000 187000
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_wmem=4096 39000 187000
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_mem=187000 187000 187000
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_no_metrics_save=1
+APPEND|BOTTOM|/system/build.prop|net.ipv4.tcp_moderate_rcvbuf=1
+APPEND|BOTTOM|/system/build.prop| 
+APPEND|BOTTOM|/system/build.prop|# Faster streaming
+APPEND|BOTTOM|/system/build.prop|media.stagefright.enable-player=true
+APPEND|BOTTOM|/system/build.prop|media.stagefright.enable-meta=true
+APPEND|BOTTOM|/system/build.prop|media.stagefright.enable-scan=true
+APPEND|BOTTOM|/system/build.prop|media.stagefright.enable-http=true
+APPEND|BOTTOM|/system/build.prop|media.stagefright.enable-record=true
+APPEND|BOTTOM|/system/build.prop| 
+APPEND|BOTTOM|/system/build.prop|# Use googles DNS
+APPEND|BOTTOM|/system/build.prop|net.rmnet0.dns1=84.200.69.80
+APPEND|BOTTOM|/system/build.prop|net.rmnet0.dns2=84.200.70.40
+APPEND|BOTTOM|/system/build.prop|net.dns1=84.200.69.80
+APPEND|BOTTOM|/system/build.prop|net.dns2=84.200.70.40
+APPEND|BOTTOM|/system/build.prop| 
+APPEND|BOTTOM|/system/build.prop|# Slight better graphics
+APPEND|BOTTOM|/system/build.prop|video.accelerate.hw=1
+APPEND|BOTTOM|/system/build.prop|ro.media.dec.jpeg.memcap=20000000
+APPEND|BOTTOM|/system/build.prop|ro.media.enc.hprof.vid.bps=8000000
+APPEND|BOTTOM|/system/build.prop|ro.media.enc.jpeg.quality=100
+APPEND|BOTTOM|/system/build.prop| 
+APPEND|BOTTOM|/system/build.prop|# Disables logging and sending data
+APPEND|BOTTOM|/system/build.prop|ro.config.nocheckin=1
+APPEND|BOTTOM|/system/build.prop|profiler.force_disable_err_rpt=1
+APPEND|BOTTOM|/system/build.prop|profiler.force_disable_ulog=1
+APPEND|BOTTOM|/system/build.prop| 
+APPEND|BOTTOM|/system/build.prop|#Xtra
+APPEND|BOTTOM|/system/build.prop|persist.sys.power_on.hide_bar=on
+APPEND|BOTTOM|/system/build.prop|persist.sys.first.launcher=on
+APPEND|BOTTOM|/system/build.prop|ro.mylaunch.pkgName=com.canzone.amllauncher
+APPEND|BOTTOM|/system/build.prop|ro.mylaunch.clsName=com.canzone.amllauncher.Launcher
+APPEND|BOTTOM|/system/build.prop|#Do note send inactive cmd when disable cec service
+APPEND|BOTTOM|/system/build.prop|sys.ignore.inativecec=true
+APPEND|BOTTOM|/system/build.prop|sys.open.deepcolor=true
 
 # Remove FOTA properties
 REMOVE|/system/build.prop|ro.fota
@@ -107,23 +99,29 @@ REMOVE|/system/build.prop|# begin fota properties
 REMOVE|/system/build.prop|# end fota properties
 
 # Debloat
-DELETE|/system/preinstall
 DELETE|/system/app/AppInstaller
+DELETE|/system/app/Camera2
 DELETE|/system/app/FileBrowser
-DELETE|/system/app/Music
 DELETE|/system/app/FotaUpdate
 DELETE|/system/app/FotaUpdateReboot
 DELETE|/system/app/ftest
+DELETE|/system/app/GoogleContactsSyncAdapter
 DELETE|/system/app/LiveWallpapersPicker
+DELETE|/system/app/Music
+DELETE|/system/app/Miracast
 DELETE|/system/app/OTAUpgrade
+DELETE|/system/app/PPPoE
+DELETE|/system/app/VideoPlayer
+DELETE|/system/media/bootanimation.zip
 DELETE|/system/media/boxtest.mp4
 DELETE|/system/media/kodi.zip
-DELETE|/system/media/bootanimation.zip
+DELETE|/system/preinstall
+DELETE|/system/priv-app/CalendarProvider
+DELETE|/system/priv-app/ContactsProvider
+DELETE|/system/priv-app/DLNA
 DELETE|/system/priv-app/GoogleFeedback
 DELETE|/system/priv-app/Launcher2
 DELETE|/system/priv-app/WallpaperCropper
-DELETE|/system/preinstall
 
 # Create pre-install directory if non existing
 CREATE|DIRECTORY|/preinstall
-
