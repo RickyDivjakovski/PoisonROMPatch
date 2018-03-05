@@ -93,7 +93,7 @@ APPEND|BOTTOM|/system/build.prop|#Do note send inactive cmd when disable cec ser
 APPEND|BOTTOM|/system/build.prop|sys.ignore.inativecec=true
 APPEND|BOTTOM|/system/build.prop|sys.open.deepcolor=true
 
-# Remove GAPPS
+# Update GAPPS
 DELETE|/system/app/Books
 DELETE|/system/app/CalculatorGooglePrebuilt
 DELETE|/system/app/CalendarGooglePrebuilt
@@ -191,6 +191,14 @@ DELETE|/system/priv-app/Velvet
 DELETE|/system/priv-app/vending
 DELETE|/system/priv-app/Vending
 DELETE|/system/usr/srec/en-US/
+APPEND|BOTTOM|/system/build.prop|# begin gapps properties
+APPEND|BOTTOM|/system/build.prop|ro.addon.type=gapps
+APPEND|BOTTOM|/system/build.prop|ro.addon.arch=arm64
+APPEND|BOTTOM|/system/build.prop|ro.addon.sdk=25
+APPEND|BOTTOM|/system/build.prop|ro.addon.platform=7.1
+APPEND|BOTTOM|/system/build.prop|ro.addon.open_type=pico
+APPEND|BOTTOM|/system/build.prop|ro.addon.open_version=20180303
+APPEND|BOTTOM|/system/build.prop|# end gapps properties
 
 # Remove FOTA
 REMOVE|/system/build.prop|ro.fota
