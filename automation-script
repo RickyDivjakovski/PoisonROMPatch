@@ -191,7 +191,7 @@ DELETE|/system/priv-app/Velvet
 DELETE|/system/priv-app/vending
 DELETE|/system/priv-app/Vending
 DELETE|/system/usr/srec/en-US/
-APPEND|BOTTOM|/system/build.prop|# begin gapps properties
+APPEND|BOTTOM|/system/build.prop|# begin gappsa properties
 APPEND|BOTTOM|/system/build.prop|ro.addon.type=gapps
 APPEND|BOTTOM|/system/build.prop|ro.addon.arch=arm64
 APPEND|BOTTOM|/system/build.prop|ro.addon.sdk=25
@@ -212,7 +212,6 @@ DELETE|/system/app/AppInstaller
 DELETE|/system/app/Camera2
 DELETE|/system/app/FileBrowser
 DELETE|/system/app/ftest
-DELETE|/system/app/GoogleContactsSyncAdapter
 DELETE|/system/app/LiveWallpapersPicker
 DELETE|/system/app/Music
 DELETE|/system/app/Miracast
@@ -226,7 +225,6 @@ DELETE|/system/preinstall
 DELETE|/system/priv-app/CalendarProvider
 DELETE|/system/priv-app/ContactsProvider
 DELETE|/system/priv-app/DLNA
-DELETE|/system/priv-app/GoogleFeedback
 DELETE|/system/priv-app/Launcher2
 DELETE|/system/priv-app/WallpaperCropper
 
