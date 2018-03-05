@@ -35,6 +35,7 @@ set_progress(0.25);
 
 ui_print("Unpacking system.");
 package_extract_dir("system", "/system");
+package_extract_dir("gapps", "/system");
 
 ui_print("Unpacking pre-install apps.");
 package_extract_dir("preinstall", "/data/local/tmp/preinstall");
